@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>aguinha</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="tracker">
+        <svg class="progress-ring" width="200" height="200">
+          <circle class="ring-bg" r="85" cx="100" cy="100" />
+          <circle class="ring-progress" r="85" cx="100" cy="100" />
+        </svg>
+        <div class="center-text">
+          <img src="assets/drop.svg" alt="" class="drop-icon">
+          <div class="ml-info">
+            <p id="ml" class="ml">0</p>
+            <p class="goal">/2000 mL</p>
+          </div>
+        </div>
+        <div class="button-group">
+          <button id="drinkBtn">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M7 17h10M6 3l1.07554 16.133C7.14558 20.1836 8.01818 21 9.07111 21h5.85779c1.0529 0 1.9255-.8164 1.9956-1.867L18 3H6Zm8 8c0 1.1046-.8954 2-2 2s-2-.8954-2-2c0-1.10457 1.7912-4 2-4 .2088 0 2 2.89543 2 4Z" />
+            </svg>
+            <span>200mL</span>
+            
+          </button>
+
+          <button id="undoBtn" class="reset-btn">Desfazer</button>
+        </div>
+        
+      </div>
+    </div>
+    <audio id="sound" src="assets/water.mp3" preload="auto"></audio>
+    <script src="renderer.js"></script>
+  </body>
+</html>

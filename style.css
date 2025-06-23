@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('assets/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('assets/fonts/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: #dbeafe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  width: 250px;
+  margin: 4rem auto;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.ring-bg {
+  stroke: #e5e7eb;
+  stroke-width: 10;
+  fill: transparent;
+}
+
+.ring-progress {
+  stroke: #3b82f6;
+  stroke-width: 10;
+  fill: transparent;
+  stroke-dasharray: 408;
+  stroke-dashoffset: 408;
+  transition: stroke-dashoffset 0.5s;
+  stroke-linecap: round;
+}
+
+.drop-icon {
+  width: 40px;
+  height: auto;
+  margin-bottom: 4px;
+}
+
+.center-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  gap: 8px;
+}
+
+.ml-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  padding-top: 4px;
+}
+
+.ml {
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  color: #111827;
+  margin: 0;
+  line-height: 1;
+  max-width: 100px;
+}
+
+.goal {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 0;
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+#drinkBtn {
+  display: flex;
+  gap: 3px;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.clicked {
+  transform: scale(0.98);
+  transition: transform 0.1s;
+}
+

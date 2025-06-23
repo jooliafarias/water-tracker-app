@@ -1,0 +1,20 @@
+{
+  "name": "aguinha-app",
+  "version": "1.0.0",
+  "description": "\"App para controlar consumo de água\"",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "água",
+    "tracker"
+  ],
+  "author": "Júlia",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^36.4.0"
+  }
+}

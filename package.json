@@ -1,20 +1,40 @@
 {
   "name": "aguinha-app",
   "version": "1.0.0",
-  "description": "\"App para controlar consumo de água\"",
+  "description": "App para controlar e lembrar sobre o consumo de água",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "electron",
     "água",
-    "tracker"
+    "tracker",
+    "hidratação",
+    "lembrete",
+    "notificação",
+    "saúde"
   ],
   "author": "Júlia",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^36.4.0"
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.julia.aguinha",
+    "productName": "Aguinha",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon_aguinha.ico"
+    }
   }
 }

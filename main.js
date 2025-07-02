@@ -6,7 +6,7 @@ let win;
 
 function createWindow() {
   win = new BrowserWindow({
-    width: 600,
+    width: 500,
     height: 400,
     icon: path.join(__dirname, 'assets/icon_aguinha.ico'),
     webPreferences: {

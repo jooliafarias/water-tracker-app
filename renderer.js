@@ -77,7 +77,7 @@ window.onload = () => {
 
   // Restaurar intevalo salvo antes de fechar o app
   const salvoIntervalo = localStorage.getItem("intervaloMinutos");
-  if (intervaloMinutos) {
+  if (salvoIntervalo) {
     intervaloMinutos = parseInt(salvoIntervalo);
     intervaloId = setInterval(() => {
       new Notification("Hora de beber água! 💧", {
